@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selector</title>
+    <style>
+        /* #main p{
+            color: red;
+        } */
+       /* #inside p{
+            background-color: aqua;
+        } */
+         /* #main > p{
+            background-color: blue:
+        } */
+        /* #main + p{ 
+            background-color: green;
+        } */
+
+         
+        /* style for a special state of element*/
+        /* a{ 
+            color: brown;
+         
+        a:link{
+            text-decoration: none; font-size: 40px;
+        }
+        a:hover{
+            color: greenyellow; font-size: 30px;
+        } */
+       /* a:visited{
+            color: black;
+        }*/
+
+        #second .odd{
+            color: red;
+        }
+        #second p:nth-child(even){
+            color: aqua;
+        }
+        /* style a specific part of  an element*/
+        #main p::first-letter{
+            color: rgb(255, 192, 248); font-size: 30;
+        } 
+        #main p::first-line{
+            background-color: rgb(170, 255, 0);
+        }
+        #main p::after{
+            content: "Read more";
+            color: red;
+            font-size: 40px;
+        }
+        img[alt]{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <img src="" ,alt="ABES">
+    <!--css combinators-->
+    <div id="main"><!--div first-->
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ex officia suscipit ut quas, harum deserunt laborum temporibus nemo ad?<br>
+            Quis, voluptate ratione deserunt nulla saepe quia ullam dignissimos minima?
+        </p>
+        <div id="inside"><!--inside first-->
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quo incidunt voluptatibus recusandae, nam voluptate nisi ad porro soluta, iusto doloremque tempore. Quam sunt officia ad sed dolor aspernatur. Nulla.
+
+            </p>
+        </div><!--inside first-->     
+    </div><!--div first end-->
+    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, architecto? Sint quam inventore quisquam autem, reiciendis temporibus! Autem vero saepe, nesciunt ut eum odit fuga laudantium dignissimos obcaecati, cum consectetur!
+
+    </P>
+    <a href="#" title>Visit my web page</a>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta nulla magnam expedita eveniet enim, eos dolorum modi temporibus ad velit perspiciatis sequi voluptas aperiam? Libero magnam ducimus rem alias temporibus.
+    </p>
+
+    <div id="second">
+        <p class="odd">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam culpa neque cupiditate nihil est repellendus, tempora non illum ipsa libero quia vero repudiandae praesentium, maxime animi amet, eius ea harum.
+
+        </p>
+        <p class="even">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum officia voluptate eveniet aliquam. Dicta facere veniam deleniti tempore eius eligendi, ut culpa modi perferendis aliquid impedit debitis nostrum ab? Laboriosam?
+
+        </p>
+        <p class="odd">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel delectus, laudantium consequatur quo id voluptatem iste dolor beatae. A quae minima consequatur provident rem iste beatae debitis ipsum. Aliquam, fugiat?
+
+
+        </p>
+        <p class="even"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem harum est qui ducimus velit amet nisi, et consequatur quis nam, ipsam dolor ex nobis aliquam voluptas ad dolorum accusantium reprehenderit!
+
+        </p>
+    </div>
+    
+</body>
+</html>
