@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        html,*{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+
+        }
+        #main {
+            width: 350px;
+            border: 2px solid rgb(19, 2, 2);
+            background-color: rgb(131, 19, 235);
+        }
+        header {
+            background-color: rgb(163, 13, 13);
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: aqua;
+            font-weight: bold;
+        }
+        nav {
+            background-color: rgb(61, 6, 111);
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(13, 246, 246)
+        }
+        .middle {
+            display: flex;
+            height: 150px;
+        }
+        section {
+            background-color: rgb(18, 150, 203);
+            flex: 1;
+            display: flex;
+            justify-content: center ;
+            align-items: center;
+            color: rgb(201, 51, 101);
+
+        }
+        aside {
+            background-color: rgb(223, 144, 42);
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(83, 239, 83);
+        }
+        article {
+            background-color: rgba(127, 255, 212, 0.29);
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color:rgb(188, 103, 29);
+
+        }
+        footer {
+            background-color: rgb(36, 116, 126);
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color:rgb(143, 125, 23);
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="main">
+        <header>Header</header>
+        <nav>Nav</nav>
+        <div class="middle">
+            <section>Section</section>
+            <aside>Aside</aside>
+
+        </div>
+        <article>Article</article>
+        <footer>Footer</footer>
+    </div>
+    
+</body>
+</html>
