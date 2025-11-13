@@ -1,0 +1,24 @@
+body{
+    background-color: rgb(34, 34, 199);
+}
+p{
+    font-family: Arial;
+    font-size: 30px;
+    font-weight: 700;
+    font-style: italic;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 1px rgb(206, 31, 31);
+    color:rgb(109, 210, 109);
+    display: inline-block;
+
+}
+img{
+    border: 2px solid black;
+    /* border-radius: 50%; */
+    float: left;
+    margin-right: 20px;
+    padding: 3px;
+
+}
