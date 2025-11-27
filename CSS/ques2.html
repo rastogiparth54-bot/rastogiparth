@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Layout</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+/* Header */
+.header{
+    display: flex;
+    justify-content: space-between;
+    background: lightgray;
+    padding: 20px;
+    margin: 10px;
+}
+
+.banner{
+    background: rgb(200,200,200);
+    padding: 30px;
+    text-align: center;
+    margin: 10px;
+}
+
+.service{
+    background: rgb(210,210,210);
+    padding: 25px;
+    text-align: center;
+    margin: 10px;
+}
+
+/* Boxes row */
+.boxes{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.box{
+    width: 30%;
+    height: 150px;
+    background: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Footer */
+.footer{
+    background: lightgray;
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+}
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="logo"></div>
+        <div class="nav"></div>
+    </div>
+
+    <div class="banner"></div>
+
+    <div class="service"></div>
+
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+    <div class="footer"></div>
+
+</body>
+</html>

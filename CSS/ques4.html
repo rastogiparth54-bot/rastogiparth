@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Wireframe Layout</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* styles.css - external stylesheet (no inline styles) */
+
+/* Reset-ish */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html,body,#root,.page { height: 100%; }
+
+/* Page layout */
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #d0d7df;
+  padding: 14px 18px;
+  border-bottom: 6px solid transparent; /* visual separation */
+}
+.logo { font-weight: 700; }
+.main-nav a {
+  text-decoration: none;
+  font-size: 0.95rem;
+  color: #222;
+}
+
+/* Main content + sidebar wrapper */
+.content-area {
+  display: grid;
+  grid-template-columns: 220px 1fr; /* sidebar + main */
+  gap: 20px;
+  padding: 18px;
+  flex: 1;
+}
+
+/* Sidebar */
+.sidebar {
+  background: transparent;
+  padding-top: 20px;
+}
+.sidebar ul { list-style: none; }
+.sidebar li { margin: 14px 0; }
+.sidebar a { text-decoration: none; color: #333; }
+
+/* Main area */
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+/* Card grid (4 columns × multiple rows) */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+.card {
+  background: #d8d8d8;
+  height: 78px; /* visual square-ish blocks — adjust as needed */
+  border-radius: 6px;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.03) inset;
+}
+
+/* Three wide boxes below the grid */
+.boxes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+.box {
+  background: #cfd8df;
+  padding: 24px;
+  height: 110px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:6px;
+  font-weight:600;
+}
+
+/* Footer */
+.site-footer {
+  background: #cfd7de;
+  padding: 12px 18px;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+/* Responsiveness */
+@media (max-width: 900px) {
+  .content-area { grid-template-columns: 1fr; }
+  .card-grid { grid-template-columns: repeat(3, 1fr); }
+  .boxes { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 560px) {
+  .card-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .boxes { grid-template-columns: 1fr; }
+  .sidebar { order: -1; } /* move sidebar above main on small screens if desired */
+}
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <div class="logo"></div>
+      <nav class="main-nav">
+        <a href="#"></a>
+      </nav>
+    </header>
+
+    <div class="content-area">
+      <aside class="sidebar">
+        <ul>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+        </ul>
+      </aside>
+
+      <main class="main">
+        <section class="card-grid" aria-label="Gallery">
+          <!-- 4 columns × 4 rows = 16 cards -->
+          <!-- Repeat card element 16 times -->
+          <div class="card"> </div><div class="card"> </div><div class="card"> </div><div class="card"> </div>
+          <div class="card"> </div><div class="card"> </div><div class="card"> </div><div class="card"> </div>
+          <div class="card"> </div><div class="card"> </div><div class="card"> </div><div class="card"> </div>
+          <div class="card"> </div><div class="card"> </div><div class="card"> </div><div class="card"> </div>
+        </section>
+
+        <section class="boxes" aria-label="Feature boxes">
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+        </section>
+      </main>
+    </div>
+
+    <footer class="site-footer">
+      <div class="footer-inner"></div>
+    </footer>
+  </div>
+</body>
+</html>
