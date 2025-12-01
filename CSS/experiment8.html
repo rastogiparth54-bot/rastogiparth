@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile Cards</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color: blanchedalmond;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html,*{
+            margin: 0;
+            padding: 0;
+            
+        }
+        .card-container{
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 30px;
+        }
+        .card{
+            width: 250 px;
+            background-color: aqua;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 10px palegreen;
+            text-align: center;
+        }
+        .circle{
+            width: 80px;
+            height: 80px;
+            background-color: rgb(57, 57, 213);
+            border-radius: 50%;
+            color: aliceblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 15px auto;
+            font-size: 22px;
+            font-weight: bold;
+        }
+        h3{
+            margin: 10px 0 5px 0;
+            font-size: 20px;
+        }
+        p{
+            margin: 3px 0;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h2
+    style="text-align: center;">Three student profile cards arranged in a row , aligned at the center of the page.</h2>
+    <div class="card-container">
+        <div class="card">
+            <div class="circle">PR</div>
+            <h3>Parth Rastogi</h3>
+            <p>B-Tech - CSE DS</p>
+            <p>ADM NO. - 2025B15410165</p>
+            <p>1st year</p>
+        </div>
+        <div class="card">
+            <div class="circle">DS</div>
+            <h3>Divyansh Saxena</h3>
+            <p>B-Tech - CSE Core</p>
+            <p>ADM NO. - 2025B01010979</p>
+            <p>1st year</p>
+        </div>
+        <div class="card">
+            <div class="circle">SP</div>
+            <h3>Sarvagya Parashar</h3>
+            <p>B-Tech - CSE Core </p>
+            <p>ADM NO. - 2025B01011239</p>
+            <p>1st year</p>
+        </div>
+    </div>
+    
+</body>
+</html>
