@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        html,*{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        main{
+            width: 1200px;
+            height: auto;
+            background-color: aqua;
+            margin: 0 auto;
+            display: grid;
+            /* grid-template-columns: 200px 300px 400px auto; */
+            /* grid-template-columns: repeat(4 , 1fr);
+            gap: 20px; */
+            grid-template-rows: 150px 80px 500px 200px;
+            gap: 20px;
+        }
+        .box{
+            height: 300px;
+            background-color: rgb(157, 75, 233);
+        }
+        #left-rgt{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            background-color: rgb(234, 131, 7);
+        }
+        .box_left,
+        .box_right{
+            background-color: brown;
+        }
+        p{
+            /* font-size: 5vh; */
+            font-size: 4rem;
+        }
+        /* @media screen and(max-width:375px){
+            main{
+                display: grid;
+                grid-template-columns: repeat(1 , 1fr);
+                gap: 20px;
+            }
+        }
+        @media  screen and (min-width:375px) and (max-width:768px) {
+            main{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                gap: 20px;
+                background-color: blue;
+            }
+            
+        } */
+
+    </style>
+</head>
+<body>
+    <h1>HELLO ABES</h1>
+    
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro maiores sequi nisi minus necessitatibus cum inventore aliquid dignissimos, blanditiis eveniet perferendis quidem at adipisci velit, nobis soluta sint, pariatur delectus!</p>
+        <main>
+        <div  class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">
+            <div class="box_left">left</div>
+            <div class="box_rightr">right</div>
+        </div>
+        <div class="box">4</div>
+    </main>
+    
+</body>
+</html>

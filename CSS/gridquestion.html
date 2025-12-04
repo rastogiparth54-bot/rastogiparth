@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-template-rows</title>
+    <style>
+        html,*{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            height: 100px;
+            background-color: white;
+        }
+        .container{
+            width:600px;
+            height: 500px;
+            border: 2px solid black;
+            display: grid;
+
+            grid-template-rows: 70px 60px 1fr 60px;
+            grid-template-columns:1fr 2fr 1fr ;
+            grid-template-areas: "header header header"
+            "nav nav nav"
+            "left main right"
+            "footer footer footer";
+        }
+
+        header,nav,.left,.main,.right,footer {
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        header{grid-area: header;}
+        nav{grid-area: nav;}
+        .left{grid-area: left;}
+        .main{grid-area: main;}
+        .right{grid-area: right;}
+        footer{grid-area: footer;}
+
+    </style>
+</head>
+<body>
+   <div class="container">
+    <header>Header</header>
+    <nav>Navigation Menu</nav>
+    <div class="left">content</div>
+    <div class="main">Main Content</div>
+    <biv class="right">Content</biv>
+   </div>
+    
+</body>
+</html>
