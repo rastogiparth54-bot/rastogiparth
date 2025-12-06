@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Navbar Output</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* NAVBAR */
+        nav{
+            background: #111;
+            color: white;
+            padding: 12px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo{
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .menu{
+            display: flex;
+            gap: 20px;
+            list-style: none;
+        }
+
+        .menu li a{
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .actions{
+            display: flex;
+            gap: 15px;
+        }
+
+        .actions a{
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        /* HAMBURGER */
+        .hamburger{
+            display: none;
+            font-size: 22px;
+            cursor: pointer;
+        }
+
+        #toggle{
+            display: none;
+        }
+
+        /* MOBILE VIEW */
+        @media(max-width: 768px){
+            .menu{
+                position: absolute;
+                top: 55px;
+                left: 0;
+                width: 100%;
+                background: #222;
+                flex-direction: column;
+                align-items: center;
+                display: none;
+            }
+
+            .menu li{
+                padding: 12px 0;
+            }
+
+            .hamburger{
+                display: block;
+            }
+
+            #toggle:checked ~ .menu{
+                display: flex;
+            }
+
+            .actions{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">ShopEase</div>
+
+        <input type="checkbox" id="toggle">
+        <label for="toggle" class="hamburger">☰</label>
+
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">Deals</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <div class="actions">
+            <a href="#">Cart</a>
+            <a href="#">Login</a>
+        </div>
+    </nav>
+
+</body>
+</html>
