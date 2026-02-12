@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid layout 1</title>
+    <style>
+        .body{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box ;
+            background-color: blueviolet;
+            width: 1700px;
+            height: 1000px;
+        }
+
+        .HelloWorld{
+            width: 1700px;
+            height: 150px;
+            background-color: aqua;
+        }
+        #container{
+            box-sizing: border-box;
+            display: grid;
+            margin: 0px;
+            padding: 0px;
+            grid-template-columns: repeat(5 , 1fr);
+        }
+        #Aside{
+            width: 700px;
+            height:400px;
+            background-color: palevioletred;
+        }
+        #Box1{
+            width: 200px;
+            height: 400px;
+            background-color: burlywood;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="HelloWorld"></div>
+    <div id="Container"> 
+    <div id="Aside"></div> 
+    <div id="Box1"></div> 
+    <div id="Box1"></div>
+    <div id="Box1"></div>
+    <div id="Box1"></div> 
+</div>
+    <div class="Footer"></div>
+</body>
+</html>
