@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- <style>
+        .box{
+            background-color: aqua;
+            height: 200px;
+        }
+    </style> -->
+  </head>
+  <body>
+    <h1 class="text-3xl font-bold underline">
+      Hello world!
+    </h1>
+  </body>
+
+  <!--main div-->
+  <div class="w-7xl mx-auto bg-amber-800 grid grid-cols-4 lg:grid-cols-2 sm:grid-cols-1 gap=4" style="height: 900px;">
+    <div class="box bg-cyan-400 flex-1">
+        <h2>box 1</h2>
+        <p class="font-mono text-4xl italic font-medium text-orange-500 line-through indent-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis officia obcaecati possimus dolor minima magni fugit in? Illum rerum magnam deleniti similique, in, aut corporis excepturi adipisci ex dicta architecto.</p>
+    </div>
+
+    <div class="box bg-lime-400 flex-1 rounded-4xl">
+        <h2>box 2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt incidunt, officiis quo aliquid necessitatibus delectus aut voluptatum ipsum laborum, sunt quod ea iste iusto quis sequi vel corporis autem error.</p>
+    </div>
+    <div class="box bg-amber-400 flex-1 border-black border-8">
+        <h2>box 3</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat quasi deserunt reprehenderit obcaecati consequatur, molestias doloremque voluptates fugit amet, cumque ad laboriosam consequuntur, aliquid pariatur fugiat unde repellat tenetur in.</p>
+    </div>
+    <div class="box bg-linear-to-r from-red-500 to-purple-500 flex-1 rounded-4xl shadow-1g shadow-cyan-500/50">
+        <h2>box 4</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita delectus rem tenetur suscipit blanditiis quos voluptatum alias, tempora, ullam similique atque ex minima, beatae sed et sapiente tempore ipsa sint.</p>
+    </div>
+  </div>
+</html>
