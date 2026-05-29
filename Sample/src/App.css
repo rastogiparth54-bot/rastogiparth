@@ -1,0 +1,271 @@
+/* App.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.hero {
+  height: 100vh;
+  background: url("/bg.jpeg") center/cover no-repeat;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+}
+
+.navbar {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 120px;
+}
+
+.logo {
+  width: 180px;
+}
+
+.nav-right {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-right select,
+.signin-btn,
+.email-box button {
+  height: 40px;
+  border: none;
+  border-radius: 4px;
+}
+
+.nav-right select {
+  padding: 0 10px;
+}
+
+.signin-btn,
+.email-box button {
+  background: rgb(229, 9, 20);
+  color: white;
+  padding: 0 18px;
+  cursor: pointer;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-content h3 {
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+
+.email-box {
+  display: flex;
+  gap: 10px;
+}
+
+.email-box input {
+  width: 350px;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid gray;
+  color: white;
+  border-radius: 4px;
+}
+
+.section {
+  padding: 60px 120px;
+}
+
+.section h2 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.trending {
+  display: flex;
+  gap: 25px;
+}
+
+.movie-card {
+  position: relative;
+  transition: 0.3s;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.movie-card img {
+  width: 200px;
+  border-radius: 10px;
+}
+
+.movie-card span {
+  position: absolute;
+  bottom: 10px;
+  left: -20px;
+
+  font-size: 6rem;
+  font-weight: bold;
+
+  -webkit-text-stroke: 2px white;
+  color: black;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #38104b;
+  flex: 1;
+  min-width: 250px;
+
+  padding: 25px;
+  border-radius: 15px;
+
+  position: relative;
+}
+
+.card h3 {
+  margin-bottom: 15px;
+}
+
+.card p {
+  color: #c5c5c5;
+}
+
+.icon {
+  font-size: 3rem;
+  margin-top: 20px;
+}
+
+.faq {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.faq-item {
+  background: #2d2d2d;
+  padding: 25px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.faq-item:hover {
+  background: #444;
+}
+
+.bottom-email {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.bottom-email h3 {
+  margin-bottom: 20px;
+}
+
+.footer {
+  padding: 60px 120px;
+  color: #aaa;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
+  flex-wrap: wrap;
+}
+
+.footer-links ul {
+  list-style: none;
+}
+
+.footer-links li {
+  margin-bottom: 12px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.footer-select {
+  padding: 8px 15px;
+  background: black;
+  color: white;
+  border: 1px solid gray;
+}
+
+.netflix-india {
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .navbar,
+  .section,
+  .footer {
+    padding: 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .email-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .email-box input {
+    width: 100%;
+  }
+
+  .trending {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
